@@ -27,6 +27,7 @@ body {
   align-content: center;
   background-color: white;
   border-radius: 20px 20px 20px 20px;
+  box-shadow: 5px 8px 2px 1px rgba(42, 42, 49, 0.2);
   margin: 5%;
   height: 90%;
   width: 90%;
@@ -52,6 +53,11 @@ form {
   font-weight: 700;
 }
 
+.form-input:focus {
+  outline: none !important;
+  border: 2px solid hsl(244, 13%, 56%);
+}
+
 .btn {
   display: inherit;
   justify-content: center;
@@ -61,12 +67,18 @@ form {
   margin-top: 7%;
   width: inherit;
   height: inherit;
-  border: 1px solid hsl(246, 25%, 77%);
+  border: 2px solid hsl(154, 59%, 45%);
   border-radius: 5px;
   font-weight: 600;
   letter-spacing: 1px;
   color: white;
   background-color: hsl(154, 59%, 51%);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: hsl(154, 71%, 66%);
+  border-color: rgb(68, 230, 160);
 }
 
 .form-end {
@@ -119,7 +131,9 @@ form {
   font-size: 14px;
   color: white;
   background-color: hsl(248, 32%, 49%);
+  border: 2px solid hsl(248, 32%, 45%);
   border-radius: 10px 10px 10px 10px;
+  box-shadow: 1px 8px 2px 1px rgba(42, 42, 49, 0.2);
   margin-left: 53%;
   margin-top: 6%;
   width: 34%;
@@ -136,4 +150,57 @@ form {
   text-decoration: none;
   color: inherit;
   font-weight: 700;
+}
+
+.error {
+  border: 2px solid hsl(0, 100%, 74%);
+}
+
+.error-message1 {
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  font-style: italic;
+  color: hsl(0, 100%, 74%);
+  text-align: right;
+}
+
+.error-message2 {
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  font-style: italic;
+  color: hsl(0, 100%, 74%);
+  text-align: right;
+}
+
+.error-message3 {
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  font-style: italic;
+  color: hsl(0, 100%, 74%);
+  text-align: right;
+}
+
+.error-message4 {
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  font-style: italic;
+  color: hsl(0, 100%, 74%);
+  text-align: right;
+}
+
+.icon {
+  display: block;
+  background-image: url(./Assets/Assets/images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 95%;
+}
+
+.pink::placeholder {
+  color: hsl(0, 100%, 74%);
+  font-weight: bold;
+  font-size: 15px;
 }
